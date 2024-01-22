@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Mein erstes Webpage</title>
+    <style>
+        
+        body, h2, p { margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f4f4; }
+
+        
+        @media  (min-width:320px) {
+            nav { color: red;
+                
+            }
+            
+        }
+        @media (min-width:321px) and (max-width:480px) {
+            nav {
+                color: #f4d03f;
+            }
+        }
+        @media (min-width:481px) and (max-width:600px)
+    {
+     nav   { color: tomato;}
+    }
+           
+        
+        nav {
+            background-color: #0088a9; 
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f4d03f; 
+        }
+
+    
+        .content { padding-top: 70px; }
+        section {
+            margin: 30px 50px;
+            padding: 50px;
+            border-radius: 10px; /* Rounded corners */
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px); /* Slight lift effect on hover */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .top-link {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #0088a9;
+        }
+
+        /* Typography and Colors */
+        h2 { color: #333; padding-bottom: 15px; font-size: 2em; }
+        p { text-align: justify; color: #666; font-size: 1.1em; }
+
+        /* Anchor Adjustments */
+        a#top { display: block; position: absolute; top: 0; visibility: hidden; }
+
+        /* Additional Content */
+        .intro-content, .feature-content, .gallery-content, .contact-content {
+            padding: 20px;
+            border-top: 2px solid #0088a9;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a { margin: 0 10px; font-size: 1em; }
+            .content { padding-top: 65px; }
+            section { margin: 20px; padding: 25px; }
+        }
+        img{height: 200px;
+        width: 200px;
+    margin-top: 50px;
+margin-left: 70px;}
+
+    </style>
+</head>
+<body>
+    <img src="iStock-1029035836-e1575983057612.jpg" alt="">
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="introduction">
+            <a href="#top" class="top-link">Back to Top</a>
+            <h2>Welcome to Our Site</h2>
+            <p>Discover the world of innovation and  Artificial Intelligence. Join us on a journey where technology meets creativity.</p>
+            <div class="intro-content">
+                <p>Our mission is to deliver cutting-edge solutions that empower individuals and businesses alike. Explore our range of services and see how we can transform your digital experience.</p>
+            </div>
+        </section>
+
+        <section id="features">
+            <a href="#top" class="top-link">Back to Top</a>
+            <h2>Features</h2>
+            <p>Our platform offers a variety of features designed to enhance productivity and creativity.</p>
+            <div class="feature-content">
+                <p>From advanced analytics to intuitive design, each feature is crafted to provide an exceptional user experience. Whether you're a beginner or a seasoned professional, our tools are tailored to meet your needs.</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <a href="#top" class="top-link">Back to Top</a>
+            <h2>Gallery</h2>
+            <p>Take a look at our gallery to see the impact of our work across different industries.</p>
+            <div class="gallery-content">
+                <p>Our gallery showcases a wide range of projects, highlighting the versatility and innovation of our solutions. From creative designs to robust applications, each project reflects our commitment to excellence.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <a href="#top" class="top-link">Back to Top</a>
+            <h2>Get in Touch</h2>
+            <p>We're here to help you. Reach out to us for any queries or support.</p>
+            <div class="contact-content">
+                <p>Contact us through our online form, email, or phone. Our dedicated team is ready to provide you with the assistance you need. We value your feedback and look forward to hearing from you.</p>
+            </div>
+        </section>
+    </div>
+
+    <a id="top"></a>
+</body>
+</html>
